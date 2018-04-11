@@ -1,5 +1,5 @@
 import 'dart:io';
-
+import 'hack.dart';
 
 
 const int lcl = 1, arg = 2, this1 = 3, that = 4, pointer = 3, static1 = 16, temp = 5 ;
@@ -66,129 +66,32 @@ String hackTransformation(List<String> str){
         i+=2;
         break;
       case "add":
-        finaltemp +=  '''@SP
-M=M-1
-A=M
-D=M
-A=A-1
-M=M+D
-''';
+       finaltemp += addOrSubop('+');
         break;
       case "sub":
-        finaltemp+= '''@SP
-M=M-1
-D=M
-M=M-D
-A=A-1
-''';
+        finaltemp+= addOrSubop('-');
         break;
       case "neg":
-        finaltemp+=  '''@SP
-A=M
-A=A-1
-M=-M
-''';
-        break;
-      case "and":
-        finaltemp+=  '''
-@SP
-M=M-1
-A=M
-D=M
-A=A-1
-M=M&D
-''';
-        break;
-      case "or":
-        finaltemp+=  '''
-@SP
-M=M-1
-A=M
-D=M
-A=A-1
-M=M|D
-''';
+        finaltemp+= negNot('-');
         break;
       case "not":
-        finaltemp+= '''@SP
-A=M-1
-M=!M''';
+        finaltemp+=negNot('!');
         break;
+      case "and":
+        finaltemp+=  andOr('&');
+        break;
+      case "or":
+        finaltemp+=  andOr('|');
+        break;
+
       case "gt":
-     finaltemp+= '''@SP
-M=M-1
-@SP
-A=M
-D=M
-@SP
-M=M-1
-@SP
-A=M
-D=D-A
-@LABEL1
-D ; JGT
-@LABEL2
-D=0 ; JEQ
-(LABEL1)
-D=-1
-(LABEL2)
-@SP
-A=M
-M=D
-@SP
-M=M+1
-''';
+     finaltemp+= jump('JGT');
      break;
       case "lt":
-        finaltemp+= '''@SP
-M=M-1
-@SP
-A=M
-D=M
-@SP
-M=M-1
-@SP
-A=M
-D=D-A
-@LABEL1
-D ; JLT
-@LABEL2
-D=0 ; JEQ
-(LABEL1)
-D=-1
-(LABEL2)
-@SP
-A=M
-M=D
-@SP
-M=M+1
-''';
+        finaltemp+= jumplt;
   break;
       case "eq":
-        finaltemp+=  '''@SP
-M=M-1
-@SP
-A=M
-D=M
-@SP
-M=M-1
-@SP
-A=M
-D=D-A
-@LABEL1
-D ; JEQ
-@LABEL2
-D=0 ; JEQ
-(LABEL2)
-D=-1
-(LABEL1)
-@SP
-A=M
-M=D
-@SP
-M=M+1
-
-''';
+        finaltemp+=  jump('JEQ');
       break;
     }
   }
@@ -200,46 +103,20 @@ String push(String typeOfStr, String value){
 
   switch(typeOfStr){
     case "constant":
-      return    '@'  + value + '''
-  
-D=A
-@SP
-M=M+1
-A=M-1
-M=D
-''';
+      return pushconstant(value);
       break;
     case "local":
-      return '@' + lcl.toString() + '''
-  
-D=M
-@''' +value + '''
-
-A=D+A
-D=M
-@SP
-M=M+1
-A=M-1
-M=D
-''';
+      return pushlocalArg(lcl.toString(), value);
       break;
     case "argument":
-      return '@' + arg.toString() + '''
-  
-D=M
-@''' +value + '''
-
- A=D+A
- D=M
- @SP
- M=M+1
- A=M-1
- M=D
- ''';
+      return pushlocalArg(arg.toString(), value);
       break;
     case "temp":
-      return '@'  +(temp+int.parse(value)).toString() + '''
+      return '''@'''  +value + '''
   
+D=A
+@5
+A=D+A
 D=M
 @SP
 M=M+1
@@ -248,55 +125,16 @@ M=D
 ''';
       break;
     case "static":
-      return '@' + static1.toString() + '''
- D=M
- @''' +value + '''
-
-A=D+A
-D=M
-@SP
-M=M+1
-A=M-1
-M=D
-''';
+      return pushlocalArg(static1.toString(), value);
       break;
     case "pointer":
-      return '@'  +(pointer+int.parse(value)).toString() + '''
-
-D=M
-@SP
-M=M+1
-A=M-1
-M=D
-''';
+     return pushPointer(value);
       break;
     case "this":
-      return '@' + this1.toString() + '''
-
-D=M
-@''' +value + '''
-
-A=D+A
-D=M
-@SP
-M=M+1
-A=M-1
-M=D
-''';
+      return pushlocalArg(this1.toString(), value);
       break;
     case "that":
-     return '@' + that.toString() + '''
-
-D=M
-@''' +value + '''
-
-A=D+A
-D=M
-@SP
-M=M+1
-A=M-1
-M=D
-''';
+     return pushlocalArg(that.toString(), value);
       break;
   }
   return "";
@@ -317,12 +155,20 @@ M=D
 ''';
       break;
     case "temp":
-      return  '''@SP
+      return  '''@'''+temp.toString()+'''
+      
+D=A
+@''' +value + '''
+
+D=D+A
+@13
+M=D
+@SP
 M=M-1
 A=M
 D=M
-@''' +(temp+int.parse(value)).toString() + '''
-
+@13
+A=M
 M=D
 ''';
       break;
@@ -349,6 +195,7 @@ M=D
 
  D=M
 @''' +value + '''
+
 D=D+A
 @13
 M=D
@@ -368,6 +215,7 @@ M=D
 
 D=M
 @''' +value + '''
+
 D=D+A
 @13
 M=D
