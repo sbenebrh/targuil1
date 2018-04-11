@@ -65,17 +65,17 @@ D=M
 A=M
 M=D
 @THIS  
-  D=M
-  @SP
-  M=M+1
-  A=M-1
-  M=D
+D=M
+@SP
+M=M+1
+A=M-1
+M=D
   @THAT  
-  D=M
-  @SP
-  M=M+1
-  A=M-1
-  M=D
+D=M
+@SP
+M=M+1
+A=M-1
+M=D
   @SP
 A=M-1
 D=M

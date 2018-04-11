@@ -135,10 +135,10 @@ else
     {temp = 'THAT';}
   return '''@'''+temp+'''
   
-  D=M
-  @SP
-  M=M+1
-  A=M-1
-  M=D
+D=M
+@SP
+M=M+1
+A=M-1
+M=D
   ''';
 }

@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a476b819-4e28-410f-8f49-746cd3ff2ef3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/hack.dart" />
+    <list default="true" id="a476b819-4e28-410f-8f49-746cd3ff2ef3" name="Default" comment="ikronot targuil 1">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Functions.dart" afterPath="$PROJECT_DIR$/bin/Functions.dart" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/main.dart" afterPath="$PROJECT_DIR$/bin/main.dart" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/MemoryAccess/BasicTest/BasicTest.asm" afterPath="$PROJECT_DIR$/projects/MemoryAccess/BasicTest/BasicTest.asm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/hack.dart" afterPath="$PROJECT_DIR$/bin/hack.dart" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/MemoryAccess/PointerTest/PointerTest.asm" afterPath="$PROJECT_DIR$/projects/MemoryAccess/PointerTest/PointerTest.asm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/MemoryAccess/StaticTest/StaticTest.asm" afterPath="$PROJECT_DIR$/projects/MemoryAccess/StaticTest/StaticTest.asm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/SimpleAdd/SimpleAdd.asm" afterPath="$PROJECT_DIR$/projects/SimpleAdd/SimpleAdd.asm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/StackArithmetic/SimpleAdd/SimpleAdd.asm" afterPath="$PROJECT_DIR$/projects/StackArithmetic/SimpleAdd/SimpleAdd.asm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/StackArithmetic/StackTest/StackTest.asm" afterPath="$PROJECT_DIR$/projects/StackArithmetic/StackTest/StackTest.asm" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,7 +19,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Functions.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Functions.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/Functions.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2348">
@@ -38,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PointerTest.asm" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PointerTest.asm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/MemoryAccess/PointerTest/PointerTest.asm">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -61,8 +54,8 @@
       <file leaf-file-name="hack.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/hack.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1550">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="-85">
+              <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -320,7 +313,7 @@
       <workItem from="1521548652712" duration="2978000" />
       <workItem from="1521642564389" duration="1798000" />
       <workItem from="1521648344594" duration="1715000" />
-      <workItem from="1523430106306" duration="19630000" />
+      <workItem from="1523430106306" duration="19885000" />
     </task>
     <task id="LOCAL-00001" summary="ikronot targuil 1">
       <created>1521648579618</created>
@@ -336,11 +329,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521656824604</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ikronot targuil 1">
+      <created>1523451953010</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1523451953010</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50150000" />
+    <option name="totallyTimeSpent" value="50405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -348,6 +348,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32022473" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -355,7 +356,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Dart Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18314607" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18314607" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -372,7 +373,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32079646" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -653,22 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/MemoryAccess/PointerTest/PointerTest.asm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/hack.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1550">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/Functions.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2348">
@@ -676,6 +660,22 @@
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/hack.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/MemoryAccess/PointerTest/PointerTest.asm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
