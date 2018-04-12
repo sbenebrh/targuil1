@@ -83,16 +83,16 @@ String hackTransformation(List<String> str){
       case "or":
         finaltemp+=  andOr('|');
         break;
-
       case "gt":
      finaltemp+= jump('JGT');
      break;
       case "lt":
         finaltemp+= jumplt;
-  break;
+      break;
       case "eq":
         finaltemp+=  jump('JEQ');
       break;
+      
     }
   }
 
@@ -112,17 +112,7 @@ String push(String typeOfStr, String value){
       return pushlocalArg(arg.toString(), value);
       break;
     case "temp":
-      return '''@'''  +value + '''
-  
-D=A
-@5
-A=D+A
-D=M
-@SP
-M=M+1
-A=M-1
-M=D
-''';
+      return pushtemp(value);
       break;
     case "static":
       return pushlocalArg(static1.toString(), value);
@@ -145,124 +135,25 @@ String pop(String typeOfString, String value){
   switch(typeOfString){
 
     case "pointer":
-      return  '''@SP
-M=M-1
-A=M
-D=M
-@''' +(pointer+int.parse(value)).toString() + '''
-
-M=D
-''';
+      return popPointer(pointer.toString(), value);
       break;
     case "temp":
-      return  '''@'''+temp.toString()+'''
-      
-D=A
-@''' +value + '''
-
-D=D+A
-@13
-M=D
-@SP
-M=M-1
-A=M
-D=M
-@13
-A=M
-M=D
-''';
+      return  popTemp(temp.toString(), value);
       break;
     case "local":
-      return '''@''' + lcl.toString() + '''
-
-D=M
-@''' +value + '''
-
-D=D+A
-@13
-M=D
-@SP
-M=M-1
-A=M
-D=M
-@13
-A=M
-M=D
-''';
+      return pophack(lcl.toString(), value);
       break;
     case "argument":
-      return '''@''' + arg.toString() + '''
-
- D=M
-@''' +value + '''
-
-D=D+A
-@13
-M=D
-@SP
-M=M-1
-A=M
-D=M
-@13
-A=M
-M=D
-''';
-
+      return pophack(arg.toString(), value);
       break;
     case "static":
-
-      return '''@''' + static1.toString() + '''
-
-D=M
-@''' +value + '''
-
-D=D+A
-@13
-M=D
-@SP
-M=M-1
-A=M
-D=M
-@13
-A=M
-M=D
-''';
+      return pophack(static1.toString(), value);
       break;
     case "this":
-      return '''@''' + this1.toString() + '''
-
-D=M
-@''' +value + '''
-
-D=D+A
-@13
-M=D
-@SP
-M=M-1
-A=M
-D=M
-@13
-A=M
-M=D
-''';
+      return pophack(this1.toString(), value);
       break;
     case "that":
-      return '''@''' + that.toString() + '''
-
-D=M
-@''' +value + '''
-
-D=D+A
-@13
-M=D
-@SP
-M=M-1
-A=M
-D=M
-@13
-A=M
-M=D
-''';
+      return pophack(that.toString(), value);
       break;
   }
   return "";

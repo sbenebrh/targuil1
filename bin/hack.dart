@@ -107,6 +107,46 @@ A=M-1
 M=D
 ''';
 }
+
+String pushPointer(String value){
+  String temp ="";
+
+  if (int.parse(value)==0)
+    {temp = 'THIS';}
+else
+    {temp = 'THAT';}
+  return '''@'''+temp+'''
+  
+D=M
+@SP
+M=M+1
+A=M-1
+M=D
+  ''';
+}
+String pushtemp(String value){
+  return '''@'''  +value + '''
+  
+D=A
+@5
+A=D+A
+D=M
+@SP
+M=M+1
+A=M-1
+M=D
+''';
+}
+popPointer(String op, String value){
+  return  '''@SP
+M=M-1
+A=M
+D=M
+@''' +(int.parse(op)+int.parse(value)).toString() + '''
+
+M=D
+''';
+}
 String pophack(String op, String value)
 {
   return  '''@'''+op+'''
@@ -126,19 +166,22 @@ A=M
 M=D
 ''';
 }
-String pushPointer(String value){
-  String temp ="";
 
-  if (int.parse(value)==0)
-    {temp = 'THIS';}
-else
-    {temp = 'THAT';}
-  return '''@'''+temp+'''
-  
-D=M
-@SP
-M=M+1
-A=M-1
+popTemp(String op, String value){
+  return '''@'''+op+'''
+      
+D=A
+@''' +value + '''
+
+D=D+A
+@13
 M=D
-  ''';
+@SP
+M=M-1
+A=M
+D=M
+@13
+A=M
+M=D
+''';
 }
