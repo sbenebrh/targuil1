@@ -19,13 +19,14 @@ D=M
 M=M-1
 A=M-1
 D=M-D
-@TRUE
+@JEQ_TRUE
+
 D;JEQ
-@END
+@JEQ_END
 D=0;JMP
-(TRUE)
+(JEQ_TRUE)
 D=-1
-(END)
+(JEQ_END)
 @0
 A=M-1
 M=D
@@ -81,13 +82,14 @@ D=M
 M=M-1
 A=M-1
 D=M-D
-@TRUE
+@JGT_TRUE
+
 D;JGT
-@END
+@JGT_END
 D=0;JMP
-(TRUE)
+(JGT_TRUE)
 D=-1
-(END)
+(JGT_END)
 @0
 A=M-1
 M=D
@@ -116,7 +118,7 @@ M=M+1
 A=M-1
 D=M
 A=A-1
-M=M+D
+M=D+M
 @SP
 M=M-1
 
@@ -137,8 +139,8 @@ M=M-1
 
 @SP
 A=M-1
-D=M
-M=-D
+D=-M
+M=D
 @SP
 A=M-1
 D=M

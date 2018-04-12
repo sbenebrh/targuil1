@@ -80,11 +80,11 @@ M=D
 A=M-1
 D=M
 A=A-1
-M=M+D
+M=D+M
 @SP
 M=M-1
 
-@ 2  
+@2  
 D=A
 @3 
 A=M
@@ -102,7 +102,7 @@ M=M-D
 @SP
 M=M-1
 
-@ 6  
+@6  
 D=A
 @4 
 A=M
@@ -116,7 +116,7 @@ M=D
 A=M-1
 D=M
 A=A-1
-M=M+D
+M=D+M
 @SP
 M=M-1
 

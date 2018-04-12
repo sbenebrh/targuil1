@@ -5,7 +5,20 @@ import 'dart:io';
  * params:operator
  * meanig: according to the operator it will transform to hack
  */
-String addOrSubop(String op)
+String add(String op)
+{
+  String finalstring = '''@SP
+A=M-1
+D=M
+A=A-1
+M=D'''+op+'''M
+@SP
+M=M-1
+
+''';
+  return finalstring;
+}
+String sub(String op)
 {
   String finalstring = '''@SP
 A=M-1
@@ -26,8 +39,8 @@ M=M-1
 String negNot(String op){
   return '''@SP
 A=M-1
-D=M
-M='''+op+'''D
+D='''+op+'''M
+M=D
 ''';
 }
 
@@ -51,14 +64,15 @@ D=M
 M=M-1
 A=M-1
 D=M-D
-@TRUE
+@'''+op+'''_TRUE
+
 D;'''+op+'''
 
-@END
+@'''+op+'''_END
 D=0;JMP
-(TRUE)
+('''+op+'''_TRUE)
 D=-1
-(END)
+('''+op+'''_END)
 @0
 A=M-1
 M=D
@@ -93,7 +107,7 @@ M=M+1
 ''';
 }
 String pushlocalArg(String op,String value){
-  return '''@ '''+ value+'''
+  return '''@'''+ value+'''
   
 D=A
 @'''+op+'''
@@ -185,3 +199,30 @@ A=M
 M=D
 ''';
 }
+
+
+//targuil 2
+String gotofunc(String path, String label){
+  return '''@''' +r"$"+ path + '''.'''+label +'''
+  
+0;JMP
+''';
+}
+
+String ifgotofunc(String filename, String label){
+  return '''@SP
+M=M-1
+A=M			
+D=M
+@''' +r"$"+ filename + '''.'''+label+'''
+  
+D;JNE
+''';
+  }
+  String gotoHelper(String filename, String label){
+  return '''@''' +r"$"+ filename + '''.'''+label;
+  }
+  String labelfunc(String filename, String label){
+    return '''('''+r"$"+filename+'''.'''+label+''')
+''';
+  }

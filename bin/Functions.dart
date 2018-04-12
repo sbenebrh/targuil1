@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'hack.dart';
+import 'package:path/path.dart';
 
 
 const int lcl = 1, arg = 2, this1 = 3, that = 4, pointer = 3, static1 = 16, temp = 5 ;
@@ -15,7 +16,7 @@ void compile(File f){
 
   String temp = removeComments(f.readAsStringSync());
   List<String> stringtemp = fileToListOfString(temp);
-  String temp2 = hackTransformation(stringtemp);
+  String temp2 = hackTransformation(stringtemp,basename(f.path) );
   File fileAsm = new File(f.path.substring(0, f.path.length -3) + ".asm");
   fileAsm.writeAsString(temp2);
 }
@@ -52,7 +53,7 @@ List<String> fileToListOfString(String str){
   return ret;
 }
 
-String hackTransformation(List<String> str){
+String hackTransformation(List<String> str, String fileName){
   String finaltemp = "";
 
   for(int i =0; i < str.length;i++ ){
@@ -66,10 +67,10 @@ String hackTransformation(List<String> str){
         i+=2;
         break;
       case "add":
-       finaltemp += addOrSubop('+');
+       finaltemp += add('+');
         break;
       case "sub":
-        finaltemp+= addOrSubop('-');
+        finaltemp+= sub('-');
         break;
       case "neg":
         finaltemp+= negNot('-');
@@ -92,7 +93,17 @@ String hackTransformation(List<String> str){
       case "eq":
         finaltemp+=  jump('JEQ');
       break;
-      
+      case "label":
+        finaltemp += labelfunc(fileName.substring(0,fileName.length - 3),str[i+1]);
+        break;
+      case "if":
+        finaltemp+= ifgotofunc(fileName.substring(0,fileName.length - 3),str[i+2]);
+        i+=2;
+        break;
+      case "goto":
+        finaltemp+= gotofunc(fileName.substring(0,fileName.length - 3), str[i+1]);
+        break;
+
     }
   }
 
