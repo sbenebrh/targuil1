@@ -1,3 +1,4 @@
+// push constant10        
 @10  
 D=A
 @SP
@@ -5,6 +6,7 @@ A=M
 M=D
 @SP
 M=M+1
+// pop local0        
 @1      
 D=M
 @0
@@ -18,6 +20,7 @@ D=M
 @13
 A=M
 M=D
+// push constant21        
 @21  
 D=A
 @SP
@@ -25,6 +28,7 @@ A=M
 M=D
 @SP
 M=M+1
+// push constant22        
 @22  
 D=A
 @SP
@@ -32,6 +36,7 @@ A=M
 M=D
 @SP
 M=M+1
+// pop argument2        
 @2      
 D=M
 @2
@@ -45,6 +50,7 @@ D=M
 @13
 A=M
 M=D
+// pop argument1        
 @2      
 D=M
 @1
@@ -58,6 +64,7 @@ D=M
 @13
 A=M
 M=D
+// push constant36        
 @36  
 D=A
 @SP
@@ -65,6 +72,7 @@ A=M
 M=D
 @SP
 M=M+1
+// pop this6        
 @3      
 D=M
 @6
@@ -78,6 +86,7 @@ D=M
 @13
 A=M
 M=D
+// push constant42        
 @42  
 D=A
 @SP
@@ -85,6 +94,7 @@ A=M
 M=D
 @SP
 M=M+1
+// push constant45        
 @45  
 D=A
 @SP
@@ -92,6 +102,7 @@ A=M
 M=D
 @SP
 M=M+1
+// pop that5        
 @4      
 D=M
 @5
@@ -105,6 +116,7 @@ D=M
 @13
 A=M
 M=D
+// pop that2        
 @4      
 D=M
 @2
@@ -118,6 +130,7 @@ D=M
 @13
 A=M
 M=D
+// push constant510        
 @510  
 D=A
 @SP
@@ -125,6 +138,7 @@ A=M
 M=D
 @SP
 M=M+1
+// pop temp6        
 @5      
 D=A
 @6
@@ -138,6 +152,7 @@ D=M
 @13
 A=M
 M=D
+// push local0        
 @0  
 D=A
 @1 
@@ -148,6 +163,7 @@ D=M
 M=M+1
 A=M-1
 M=D
+// push that5        
 @5  
 D=A
 @4 
@@ -158,6 +174,7 @@ D=M
 M=M+1
 A=M-1
 M=D
+//add
 @SP
 A=M-1
 D=M
@@ -166,6 +183,7 @@ M=D+M
 @SP
 M=M-1
 
+// push argument1        
 @1  
 D=A
 @2 
@@ -176,6 +194,7 @@ D=M
 M=M+1
 A=M-1
 M=D
+//sub
 @SP
 A=M-1
 D=M
@@ -184,6 +203,7 @@ M=M-D
 @SP
 M=M-1
 
+// push this6        
 @6  
 D=A
 @3 
@@ -194,6 +214,7 @@ D=M
 M=M+1
 A=M-1
 M=D
+// push this6        
 @6  
 D=A
 @3 
@@ -204,6 +225,7 @@ D=M
 M=M+1
 A=M-1
 M=D
+//add
 @SP
 A=M-1
 D=M
@@ -212,6 +234,7 @@ M=D+M
 @SP
 M=M-1
 
+//sub
 @SP
 A=M-1
 D=M
@@ -220,6 +243,7 @@ M=M-D
 @SP
 M=M-1
 
+// push temp6        
 @6  
 D=A
 @5
@@ -229,6 +253,7 @@ D=M
 M=M+1
 A=M-1
 M=D
+//add
 @SP
 A=M-1
 D=M

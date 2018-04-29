@@ -2,9 +2,13 @@ import 'dart:io';
 import 'hack.dart';
 import 'package:path/path.dart';
 
-
+var folder = Directory.current;
 const int lcl = 1, arg = 2, this1 = 3, that = 4, pointer = 3, static1 = 16, temp = 5 ;
-
+List<String> directory = new List<String>();
+List<String> files = new List<String>();
+File fileAsm;
+String funcname;
+bool flag ;
 
 /**
  * name :compile
@@ -13,13 +17,38 @@ const int lcl = 1, arg = 2, this1 = 3, that = 4, pointer = 3, static1 = 16, temp
  * and call hackTransformation in order to write on the asm file
  */
 void compile(File f){
+ // initlist();
 
+  String name = basename(f.parent.path);
   String temp = removeComments(f.readAsStringSync());
   List<String> stringtemp = fileToListOfString(temp);
   String temp2 = hackTransformation(stringtemp,basename(f.path) );
-  File fileAsm = new File(f.path.substring(0, f.path.length -3) + ".asm");
-  fileAsm.writeAsString(temp2);
+
+  if(directory.contains(f.parent.path)) {
+    if(flag) {
+      String tempfilecontent = fileAsm.readAsStringSync();
+      fileAsm.writeAsStringSync(inithack(), mode: FileMode.WRITE);
+      fileAsm.writeAsStringSync(tempfilecontent, mode: FileMode.WRITE_ONLY_APPEND);
+      flag = false;
+    }
+    fileAsm.writeAsStringSync(temp2, mode: FileMode.WRITE_ONLY_APPEND);
+    files.add(f.path);
+  }
+  else //if(directory.contains(f.parent.path) && !files.contains(f.path))
+    {
+      var folder1 = Directory.current;
+      flag = true;
+
+
+     // print (finaly);
+  fileAsm = new File(f.parent.path+"/"+name + ".asm");
+  directory.add(f.parent.path);
+  files.add(f.path);
+  fileAsm.writeAsStringSync(temp2);
+
 }
+}
+
 /**
  * name: removeComments
  * params: String
@@ -56,52 +85,100 @@ List<String> fileToListOfString(String str){
 String hackTransformation(List<String> str, String fileName){
   String finaltemp = "";
 
+
   for(int i =0; i < str.length;i++ ){
     switch(str[i]){
+      case "function":
+        finaltemp+='''//function
+        ''';
+        funcname = str[i+1]+'''.'''+str[i+2];
+        finaltemp += declarfunc(str[i+2],str[i+3],fileName.substring(0,fileName.length - 3));
+        break;
       case "push":
+        finaltemp +='''// push ''' + str[i+1] + str[i+2]+'''
+        
+''';
         finaltemp +=  push(str[i+1], str[i+2]);
-        i+=2;
+
         break;
       case "pop":
-        finaltemp += pop(str[i+1], str[i+2]);
-        i+=2;
+        finaltemp +='''// pop ''' + str[i+1] + str[i+2]+'''
+        
+''';
+        finaltemp += pop(str[i+1], str[i+2],funcname);
+      //  i+=2;
         break;
       case "add":
+        finaltemp+='''//add
+''';
        finaltemp += add('+');
         break;
       case "sub":
-        finaltemp+= sub('-');
+        finaltemp+='''//sub
+''';
+        finaltemp += sub('-');
         break;
       case "neg":
-        finaltemp+= negNot('-');
+        finaltemp+='''//neg
+''';
+        finaltemp += negNot('-');
         break;
       case "not":
-        finaltemp+=negNot('!');
+        finaltemp+='''//not
+''';
+        finaltemp +=negNot('!');
         break;
       case "and":
-        finaltemp+=  andOr('&');
+        finaltemp+='''//and
+''';
+        finaltemp +=  andOr('&');
         break;
       case "or":
-        finaltemp+=  andOr('|');
+        finaltemp+='''//or
+''';
+        finaltemp +=  andOr('|');
         break;
       case "gt":
-     finaltemp+= jump('JGT');
+        finaltemp+='''//gt
+''';
+     finaltemp += jump('JGT');
      break;
       case "lt":
-        finaltemp+= jumplt;
+        finaltemp+='''//lt
+''';
+        finaltemp += jumplt();
       break;
       case "eq":
-        finaltemp+=  jump('JEQ');
+        finaltemp+='''//eq
+''';
+        finaltemp +=  jump('JEQ');
       break;
       case "label":
+        finaltemp+='''//label
+''';
         finaltemp += labelfunc(fileName.substring(0,fileName.length - 3),str[i+1]);
         break;
       case "if":
-        finaltemp+= ifgotofunc(fileName.substring(0,fileName.length - 3),str[i+2]);
+        finaltemp+='''//ifgoto
+''';
+        finaltemp += ifgotofunc(fileName.substring(0,fileName.length - 3),str[i+2]);
         i+=2;
         break;
       case "goto":
-        finaltemp+= gotofunc(fileName.substring(0,fileName.length - 3), str[i+1]);
+        finaltemp+='''//goto
+''';
+        finaltemp += gotofunc(fileName.substring(0,fileName.length - 3), str[i+1]);
+        break;
+      case "call":
+        finaltemp+='''//call
+''';
+        finaltemp += callfunc( str[i+1],str[i+2], fileName.substring(0,fileName.length - 3),str[i+3]);
+        break;
+
+      case "return":
+        finaltemp+='''//return
+''';
+        finaltemp += returnhack;
         break;
 
     }
@@ -142,7 +219,7 @@ String push(String typeOfStr, String value){
 }
 
 
-String pop(String typeOfString, String value){
+String pop(String typeOfString, String value,String funcname){
   switch(typeOfString){
 
     case "pointer":
@@ -158,7 +235,7 @@ String pop(String typeOfString, String value){
       return pophack(arg.toString(), value);
       break;
     case "static":
-      return pophack(static1.toString(), value);
+      return popstatic(static1.toString(), value, funcname );
       break;
     case "this":
       return pophack(this1.toString(), value);
@@ -169,3 +246,14 @@ String pop(String typeOfString, String value){
   }
   return "";
 }
+//void initlist()
+//{
+//  folder.list(recursive: true, followLinks: false).forEach( (file)  {
+//
+//
+//    if( file.path.endsWith(".asm")){
+//      directory.add(file.parent.path);
+//      files.add(file.path);
+//    }
+//  });
+//}

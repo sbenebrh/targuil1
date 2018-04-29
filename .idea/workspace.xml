@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a476b819-4e28-410f-8f49-746cd3ff2ef3" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/MemoryAccess/BasicTest/BasicTest.asm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/MemoryAccess/PointerTest/PointerTest.asm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/MemoryAccess/StaticTest/StaticTest.asm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/SimpleAdd/SimpleAdd.asm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/StackArithmetic/SimpleAdd/SimpleAdd.asm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/StackArithmetic/StackTest/StackTest.asm" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/targuil1_test.dart" afterPath="$PROJECT_DIR$/test/a.vm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Functions.dart" afterPath="$PROJECT_DIR$/bin/Functions.dart" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/hack.dart" afterPath="$PROJECT_DIR$/bin/hack.dart" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/main.dart" afterPath="$PROJECT_DIR$/bin/main.dart" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/FunctionCalls/StaticsTest/Sys.vm" afterPath="$PROJECT_DIR$/projects/FunctionCalls/StaticsTest/Sys.vm" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,13 +26,16 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/targuil1$main_dart.coverage" NAME="main.dart Coverage Results" MODIFIED="1521320741956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="DartCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" CONTEXT_FILE_PATH="$PROJECT_DIR$/bin/main.dart" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="targuil1" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="Functions.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/Functions.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="88" column="11" lean-forward="true" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
+            <state relative-caret-position="427">
+              <caret line="109" column="14" lean-forward="true" selection-start-line="109" selection-start-column="14" selection-end-line="109" selection-end-column="14" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -29,90 +43,63 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicLoop.vm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/ProgramFlow/BasicLoop/BasicLoop.vm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="462">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hack.dart" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hack.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/hack.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="734">
-              <caret line="227" column="3" lean-forward="false" selection-start-line="227" selection-start-column="3" selection-end-line="227" selection-end-column="3" />
-              <folding />
+            <state relative-caret-position="381">
+              <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+              <folding>
+                <element signature="e#35#144#0" expanded="false" />
+                <element signature="e#167#269#0" expanded="false" />
+                <element signature="e#292#394#0" expanded="false" />
+                <element signature="e#395#459#0" expanded="false" />
+                <element signature="e#485#533#0" expanded="false" />
+                <element signature="e#559#623#0" expanded="false" />
+                <element signature="e#648#872#0" expanded="false" />
+                <element signature="e#1186#1255#0" expanded="false" />
+                <element signature="e#1300#1391#0" expanded="false" />
+                <element signature="e#1425#1582#0" expanded="false" />
+                <element signature="e#1613#1692#0" expanded="false" />
+                <element signature="e#1729#1829#0" expanded="false" />
+                <element signature="e#1871#1979#0" expanded="false" />
+                <element signature="e#2042#2133#0" expanded="false" />
+                <element signature="e#2167#2273#0" expanded="false" />
+                <element signature="e#2441#2529#0" expanded="false" />
+                <element signature="e#2579#2634#0" expanded="false" />
+                <element signature="e#3261#3440#0" expanded="false" />
+                <element signature="e#3461#3725#0" expanded="false" />
+                <element signature="e#3757#3822#0" expanded="false" />
+                <element signature="e#3919#3955#0" expanded="false" />
+                <element signature="e#3976#4247#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StackTest.asm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/StackArithmetic/StackTest/StackTest.asm">
+      <file leaf-file-name="FibonacciElement.asm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/FibonacciElement/FibonacciElement.asm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2562">
-              <caret line="122" column="5" lean-forward="false" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
+            <state relative-caret-position="294">
+              <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicLoop.cmp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/ProgramFlow/BasicLoop/BasicLoop.cmp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StackTest.vm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/StackArithmetic/StackTest/StackTest.vm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicLoop.asm" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projects/ProgramFlow/BasicLoop/BasicLoop.asm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FibonacciSeries.asm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/ProgramFlow/FibonacciSeries/FibonacciSeries.asm">
+      <file leaf-file-name="Sys.vm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/FibonacciElement/Sys.vm">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FibonacciSeries.vm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/ProgramFlow/FibonacciSeries/FibonacciSeries.vm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-189">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -143,11 +130,19 @@
         <option value="$PROJECT_DIR$/projects/07/MemoryAccess/PointerTest/PointerTest.asm" />
         <option value="$PROJECT_DIR$/bin/Hack.dart" />
         <option value="$PROJECT_DIR$/projects/07/StackArithmetic/StackTest/StackTest.asm" />
-        <option value="$PROJECT_DIR$/bin/main.dart" />
         <option value="$PROJECT_DIR$/projects/StackArithmetic/StackTest/StackTest.asm" />
         <option value="$PROJECT_DIR$/projects/ProgramFlow/BasicLoop/BasicLoop.asm" />
-        <option value="$PROJECT_DIR$/bin/hack.dart" />
+        <option value="$PROJECT_DIR$/projects/FunctionCalls/SimpleFunction/SimpleFunction.asm" />
+        <option value="$PROJECT_DIR$/bin/main.dart" />
+        <option value="$PROJECT_DIR$/test/targuil1_test.dart" />
+        <option value="$PROJECT_DIR$/projects/FunctionCalls/StaticsTest/Sys.vm" />
+        <option value="$PROJECT_DIR$/test/a.vm" />
+        <option value="$PROJECT_DIR$/test/b.vm" />
+        <option value="$PROJECT_DIR$/projects/FunctionCalls/StaticsTest/StaticsTest.asm" />
+        <option value="$PROJECT_DIR$/test/test.asm" />
+        <option value="$PROJECT_DIR$/projects/FunctionCalls/FibonacciElement/FibonacciElement.asm" />
         <option value="$PROJECT_DIR$/bin/Functions.dart" />
+        <option value="$PROJECT_DIR$/bin/hack.dart" />
       </list>
     </option>
   </component>
@@ -157,7 +152,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="width" value="976" />
     <option name="height" value="1050" />
@@ -178,6 +173,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,43 +207,27 @@
               <item name="targuil1" type="b2602c69:ProjectViewProjectNode" />
               <item name="targuil1" type="462c0819:PsiDirectoryNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="ProgramFlow" type="462c0819:PsiDirectoryNode" />
+              <item name="FunctionCalls" type="462c0819:PsiDirectoryNode" />
+              <item name="FibonacciElement" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="targuil1" type="b2602c69:ProjectViewProjectNode" />
               <item name="targuil1" type="462c0819:PsiDirectoryNode" />
               <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="ProgramFlow" type="462c0819:PsiDirectoryNode" />
-              <item name="BasicLoop" type="462c0819:PsiDirectoryNode" />
+              <item name="FunctionCalls" type="462c0819:PsiDirectoryNode" />
+              <item name="StaticsTest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="targuil1" type="b2602c69:ProjectViewProjectNode" />
               <item name="targuil1" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="ProgramFlow" type="462c0819:PsiDirectoryNode" />
-              <item name="FibonacciSeries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="targuil1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="targuil1" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="StackArithmetic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="targuil1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="targuil1" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="StackArithmetic" type="462c0819:PsiDirectoryNode" />
-              <item name="StackTest" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,14 +238,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\samuel\Desktop\Documents\3\semester bet\ikronot\targuil\targuil1\projects" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\samuel\Desktop\Documents\3\semester bet\ikronot\targuil\targuil1\projects\StackArithmetic\StackTest" />
       <recent name="C:\Users\samuel\Desktop\Documents\3\semester bet\ikronot\targuil\targuil1\projects" />
+      <recent name="C:\Users\samuel\Desktop\Documents\3\semester bet\ikronot\targuil\targuil1\projects\StackArithmetic\StackTest" />
       <recent name="C:\Users\samuel\Desktop\Documents\3\semester bet\ikronot\targuil1\projects" />
       <recent name="C:\Users\samuel\Desktop\Documents\שנה ג\semester bet\עקרונות\targuil1\projects\07" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\samuel\Desktop\Documents\3\semester bet\ikronot\targuil\targuil1\projects\FunctionCalls" />
+      <recent name="C:\Users\samuel\Desktop\Documents\3\semester bet\ikronot\targuil\targuil1\projects" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -387,7 +369,19 @@
       <workItem from="1523430106306" duration="23393000" />
       <workItem from="1523518614723" duration="1274000" />
       <workItem from="1523520212016" duration="8062000" />
-      <workItem from="1523533091633" duration="1769000" />
+      <workItem from="1523533091633" duration="2218000" />
+      <workItem from="1523814963417" duration="4235000" />
+      <workItem from="1524398227525" duration="1205000" />
+      <workItem from="1524418748029" duration="2118000" />
+      <workItem from="1524473870800" duration="3412000" />
+      <workItem from="1524587753345" duration="2537000" />
+      <workItem from="1524660502780" duration="264000" />
+      <workItem from="1524674261156" duration="4734000" />
+      <workItem from="1524738790958" duration="4015000" />
+      <workItem from="1524763301210" duration="388000" />
+      <workItem from="1524828809874" duration="2156000" />
+      <workItem from="1525003401065" duration="10003000" />
+      <workItem from="1525020176427" duration="5306000" />
     </task>
     <task id="LOCAL-00001" summary="ikronot targuil 1">
       <created>1521648579618</created>
@@ -431,15 +425,21 @@
       <option name="project" value="LOCAL" />
       <updated>1523537194305</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ikronot targuil 2(first version)">
+      <created>1523537359930</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1523537359930</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65018000" />
+    <option name="totallyTimeSpent" value="105840000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="0" width="976" height="1050" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -448,21 +448,21 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Dart Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18089887" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Dart Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1835294" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14930183" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46444446" sideWeight="0.48333332" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Google Cloud Storage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933628" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3988372" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39444444" sideWeight="0.51666665" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -518,122 +518,16 @@
     <MESSAGE value="ikronot targuil 1" />
     <MESSAGE value="ikronot targuil 1(last version)" />
     <MESSAGE value="ikronot targuil 2(last version)" />
-    <option name="LAST_COMMIT_MESSAGE" value="ikronot targuil 2(last version)" />
+    <MESSAGE value="ikronot targuil 2(first version)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ikronot targuil 2(first version)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bin/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/hack.dart" />
-    <entry file="file://$PROJECT_DIR$/projects/07/StackArithmetic/SimpleAdd/SimpleAdd.asm" />
-    <entry file="file://$PROJECT_DIR$/bin/Functions.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/07/SimpleAdd/SimpleAdd.asm" />
-    <entry file="file://$PROJECT_DIR$/New Text Document.asm" />
-    <entry file="file://$PROJECT_DIR$/New Text Document.vm" />
-    <entry file="file://C:/Program Files/Dart/dart-sdk/lib/core/regexp.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="47" column="26" lean-forward="true" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/07/MemoryAccess/PointerTest/PointerTest.vm" />
-    <entry file="file://$PROJECT_DIR$/projects/07/MemoryAccess/PointerTest/PointerTest.tst" />
-    <entry file="file://$PROJECT_DIR$/projects/07/MemoryAccess/BasicTest/BasicTestVME.tst" />
-    <entry file="file://$PROJECT_DIR$/projects/07/MemoryAccess/BasicTest/BasicTest.tst" />
-    <entry file="file://$PROJECT_DIR$/projects/07/MemoryAccess/BasicTest/BasicTest.cmp" />
-    <entry file="file://$PROJECT_DIR$/projects/07/MemoryAccess/PointerTest/PointerTest.cmp" />
-    <entry file="file://$PROJECT_DIR$/projects/07/StackArithmetic/SimpleAdd/SimpleAdd.cmp" />
-    <entry file="file://$PROJECT_DIR$/projects/07/MemoryAccess/PointerTest/PointerTest.asm" />
-    <entry file="file://$PROJECT_DIR$/projects/07/MemoryAccess/BasicTest/BasicTest.vm" />
-    <entry file="file://$PROJECT_DIR$/projects/07/MemoryAccess/BasicTest/BasicTest.asm" />
-    <entry file="file://$PROJECT_DIR$/projects/07/StackArithmetic/SimpleAdd/SimpleAdd.asm" />
-    <entry file="file://$PROJECT_DIR$/projects/07/StackArithmetic/StackTest/StackTest.asm" />
-    <entry file="file://$PROJECT_DIR$/projects/07/StackArithmetic/SimpleAdd/SimpleAdd.vm" />
-    <entry file="file://$PROJECT_DIR$/projects/07/PointerTest/PointerTest.vm" />
-    <entry file="file://$PROJECT_DIR$/projects/SimpleAdd/SimpleAdd.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/StackArithmetic/SimpleAdd/SimpleAdd.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/StackArithmetic/SimpleAdd/SimpleAdd.asm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/StackArithmetic/StackTest/StackTest.tst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/MemoryAccess/StaticTest/StaticTest.asm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/MemoryAccess/PointerTest/PointerTest.tst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/SimpleAdd/SimpleAdd.asm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/MemoryAccess/BasicTest/BasicTest.tst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/MemoryAccess/BasicTest/BasicTest.cmp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -641,20 +535,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/MemoryAccess/BasicTest/BasicTest.asm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/MemoryAccess/PointerTest/PointerTest.asm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/MemoryAccess/PointerTest/PointerTest.asm" />
     <entry file="file://$PROJECT_DIR$/projects/MemoryAccess/BasicTest/BasicTest.out">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -683,86 +564,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/StaticsTest/Sys.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/StackArithmetic/StackTest/StackTest.out" />
     <entry file="file://$PROJECT_DIR$/projects/StackArithmetic/StackTest/StackTest.cmp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/StackArithmetic/StackTest/StackTest.asm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2562">
-          <caret line="122" column="5" lean-forward="false" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/StackArithmetic/StackTest/StackTest.asm" />
     <entry file="file://$PROJECT_DIR$/projects/ProgramFlow/BasicLoop/BasicLoop.cmp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/ProgramFlow/BasicLoop/BasicLoop.vm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/StackArithmetic/StackTest/StackTest.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
+        <state relative-caret-position="189">
           <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/hack.dart">
+    <entry file="file://$PROJECT_DIR$/projects/ProgramFlow/BasicLoop/BasicLoop.asm" />
+    <entry file="file://$PROJECT_DIR$/projects/ProgramFlow/BasicLoop/BasicLoop.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="734">
-          <caret line="227" column="3" lean-forward="false" selection-start-line="227" selection-start-column="3" selection-end-line="227" selection-end-column="3" />
-          <folding />
+        <state relative-caret-position="462">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/Functions.dart">
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/StaticsTest/Sys.asm" />
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/StaticsTest/Class2.asm" />
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/StaticsTest/Class1.asm" />
+    <entry file="file://$PROJECT_DIR$/BasicLoop'.asm" />
+    <entry file="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/path-1.5.1/lib/src/context.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="88" column="11" lean-forward="true" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1953">
+          <caret line="102" column="47" lean-forward="false" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/path-1.5.1/lib/src/parsed_path.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="73" column="15" lean-forward="false" selection-start-line="73" selection-start-column="15" selection-end-line="73" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/path-1.5.1/lib/src/internal_style.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="46" column="11" lean-forward="false" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/path-1.5.1/lib/path.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="138" column="32" lean-forward="false" selection-start-line="138" selection-start-column="32" selection-end-line="138" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/path-1.5.1/lib/src/style/windows.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="58" column="13" lean-forward="false" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/FibonacciElement.asm" />
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/SimpleFunction.asm" />
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/FibonacciElement.FibonacciElement.asm" />
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/SimpleFunction.SimpleFunction.asm" />
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/StaticsTest.StaticsTest.asm" />
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/SimpleFunction/SimpleFunction.tst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/ProgramFlow/FibonacciSeries/FibonacciSeries.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -770,15 +657,164 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/SimpleFunction/SimpleFunction.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/SimpleFunction/SimpleFunction.asm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/FunctionCalls.asm" />
+    <entry file="file://$PROJECT_DIR$/projects/projects.asm" />
+    <entry file="file://$PROJECT_DIR$/projects/Class2.vm" />
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/Class1.vm" />
+    <entry file="file://$PROJECT_DIR$/test/b.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/a.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/StaticsTest/Class2.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/StaticsTest/Sys.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/StaticsTest/Class1.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/ProgramFlow/BasicLoop/BasicLoop.asm">
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/FibonacciElement/Main.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/FibonacciElement/FibonacciElementVME.tst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test.asm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/MemoryAccess/BasicTest/BasicTest.asm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4849">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/StaticsTest/StaticsTest.asm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9408">
+          <caret line="448" column="1" lean-forward="false" selection-start-line="448" selection-start-column="1" selection-end-line="448" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/FibonacciElement/Sys.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/Functions.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="109" column="14" lean-forward="true" selection-start-line="109" selection-start-column="14" selection-end-line="109" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/FunctionCalls/FibonacciElement/FibonacciElement.asm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/hack.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding>
+            <element signature="e#35#144#0" expanded="false" />
+            <element signature="e#167#269#0" expanded="false" />
+            <element signature="e#292#394#0" expanded="false" />
+            <element signature="e#395#459#0" expanded="false" />
+            <element signature="e#485#533#0" expanded="false" />
+            <element signature="e#559#623#0" expanded="false" />
+            <element signature="e#648#872#0" expanded="false" />
+            <element signature="e#1186#1255#0" expanded="false" />
+            <element signature="e#1300#1391#0" expanded="false" />
+            <element signature="e#1425#1582#0" expanded="false" />
+            <element signature="e#1613#1692#0" expanded="false" />
+            <element signature="e#1729#1829#0" expanded="false" />
+            <element signature="e#1871#1979#0" expanded="false" />
+            <element signature="e#2042#2133#0" expanded="false" />
+            <element signature="e#2167#2273#0" expanded="false" />
+            <element signature="e#2441#2529#0" expanded="false" />
+            <element signature="e#2579#2634#0" expanded="false" />
+            <element signature="e#3261#3440#0" expanded="false" />
+            <element signature="e#3461#3725#0" expanded="false" />
+            <element signature="e#3757#3822#0" expanded="false" />
+            <element signature="e#3919#3955#0" expanded="false" />
+            <element signature="e#3976#4247#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
