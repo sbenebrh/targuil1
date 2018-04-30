@@ -91,14 +91,14 @@ String hackTransformation(List<String> str, String fileName){
       case "function":
         finaltemp+='''//function
         ''';
-        funcname = str[i+1]+'''.'''+str[i+2];
+        funcname = str[i+1];
         finaltemp += declarfunc(str[i+2],str[i+3],fileName.substring(0,fileName.length - 3));
         break;
       case "push":
         finaltemp +='''// push ''' + str[i+1] + str[i+2]+'''
         
 ''';
-        finaltemp +=  push(str[i+1], str[i+2]);
+        finaltemp +=  push(str[i+1], str[i+2],funcname);
 
         break;
       case "pop":
@@ -187,7 +187,7 @@ String hackTransformation(List<String> str, String fileName){
   return finaltemp;
 }
 
-String push(String typeOfStr, String value){
+String push(String typeOfStr, String value, String funcname){
 
   switch(typeOfStr){
     case "constant":
@@ -203,7 +203,7 @@ String push(String typeOfStr, String value){
       return pushtemp(value);
       break;
     case "static":
-      return pushlocalArg(static1.toString(), value);
+      return pushstatic(static1.toString(), value, funcname);
       break;
     case "pointer":
      return pushPointer(value);

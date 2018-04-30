@@ -29,7 +29,7 @@ M=M-1
 @SP
 A=M
 D=M
-@Sys.init.8  
+@Sys.8  
 M=D
 // pop static3        
 @SP
@@ -38,7 +38,7 @@ M=M-1
 @SP
 A=M
 D=M
-@Sys.init.3  
+@Sys.3  
 M=D
 // pop static1        
 @SP
@@ -47,50 +47,44 @@ M=M-1
 @SP
 A=M
 D=M
-@Sys.init.1  
+@Sys.1  
 M=D
 // push static3        
-@3  
-D=A
-@16 
-A=M
-A=D+A
+@Sys.3  
+  
 D=M
-@SP
-M=M+1
-A=M-1
+@0
+A=M
 M=D
+@0
+M=M+1
 // push static1        
-@1  
-D=A
-@16 
+@Sys.1  
+  
+D=M
+@0
 A=M
-A=D+A
-D=M
-@SP
-M=M+1
-A=M-1
 M=D
+@0
+M=M+1
 //sub
-@SP
-A=M-1
-D=M
-A=A-1
-M=M-D
-@SP
+@0
 M=M-1
+A=M
+D=M
+@0
+A=M-1
+M=M-D
 
 // push static8        
-@8  
-D=A
-@16 
-A=M
-A=D+A
+@Sys.8  
+  
 D=M
-@SP
-M=M+1
-A=M-1
+@0
+A=M
 M=D
+@0
+M=M+1
 //add
 @SP
 A=M-1

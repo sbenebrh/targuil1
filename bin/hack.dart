@@ -19,13 +19,13 @@ M=M-1
 }
 String sub(String op)
 {
-  String finalstring = '''@SP
-A=M-1
-D=M
-A=A-1
-M=M'''+op+'''D
-@SP
+  String finalstring = '''@0
 M=M-1
+A=M
+D=M
+@0
+A=M-1
+M=M-D
 
 ''';
   return finalstring;
@@ -79,7 +79,7 @@ numhelp++;
 return retour;}
 
 String jumplt(){
-
+numhelp++;
 String retour = '''@0
 A=M-1
 D=M
@@ -100,7 +100,7 @@ D=-1
 A=M-1
 M=D
 ''';
-numhelp++;
+
 return retour;}
 
 
@@ -162,7 +162,18 @@ A=M-1
 M=D
 ''';
 }
-
+String pushstatic(String op, String value, String func){
+  return '''@'''+func+'''.'''+value+'''
+  
+  
+D=M
+@0
+A=M
+M=D
+@0
+M=M+1
+''';
+}
 popPointer(String op, String value){
   return  '''@SP
 M=M-1
@@ -244,9 +255,6 @@ D;JNE
 ''';
   }
 
-String gotoHelper(String filename, String label){
-  return '''@''' +r"$"+ filename + '''.'''+label;
-  }
 
 String labelfunc(String filename, String label){
     return '''('''+filename+'''.'''+label+''')
@@ -281,9 +289,9 @@ M=D
 D=M
 @LCL
 M=D
-'''
-    + gotofunc(str1, str2) +'''
-    
+@''' + str1 + '''.'''+str2 +'''
+
+1;JMP
 '''
 + labelfunc(path, "ReturnAddress"+numhelp.toString()) + '''
 ''';
@@ -308,57 +316,46 @@ D=M
 @5
 A=D-A
 D=M
-@R14
+@13
 M=D
 @SP
 M=M-1
-@0
-D=A
-@ARG
-D=M+D
-@R13
-M=D
-@SP
 A=M
 D=M
-@R13
+@ARG
 A=M
 M=D
 @ARG
-D=M+1
+D=M
 @SP
-M=D
+M=D+1
 @LCL
-D=M
-@1
-A=D-A
+M=M-1
+A=M
 D=M
 @THAT
 M=D
 @LCL
-D=M
-@2
-A=D-A
+M=M-1
+A=M
 D=M
 @THIS
 M=D
 @LCL
-D=M
-@3
-A=D-A
+M=M-1
+A=M
 D=M
 @ARG
 M=D
 @LCL
-D=M
-@4
-A=D-A
+M=M-1
+A=M
 D=M
 @LCL
 M=D
-@R14
+@13
 A=M
-1 ; JMP
+0; JMP
 
 
 ''';
